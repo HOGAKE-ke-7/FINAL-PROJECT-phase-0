@@ -3,7 +3,7 @@
 let pokemons = [{
     name: 'Charmander',
     type: 'Fire Pokemon',
-    image: './assets/charmander.png',
+    image: './assets/bajuhijau.jpg',
   },
   {
     name: 'Bulbasaur',
@@ -103,6 +103,28 @@ function generateCard(data) {
     button.setAttribute('id_pokemon',i)
     divCard.appendChild(button)
     console.log(button)
+
+    let tombol = document.createElement('button')
+    tombol.id = 'counter'
+    tombol.innerHTML = '+'
+    tombol.addEventListener('click',tambahAngka)
+    tombol.setAttribute('id_pokemon',i)
+    divCard.appendChild(tombol)
+    console.log(tombol)
+
+    let counter = document.createElement('h4')
+    counter.id = 'count'
+    counter.innerHTML = 1
+    counter.setAttribute('index',i)
+    divCard.appendChild(counter)
+    console.log(counter)
+
+    let tombolMin = document.createElement('button')
+    tombolMin.innerHTML = '-'
+    tombolMin.addEventListener('click',deleteData)
+    tombolMin.setAttribute('id_pokemon',i)
+    divCard.appendChild(tombolMin)
+    console.log(tombolMin)
   
     content.appendChild(divCard)
 
@@ -131,7 +153,14 @@ function addPokemon() {
   generateCard(pokemons)
 }
 
+function tambahAngka(event) {
+  const index =  +event.target.getAttribute('id_pokemon')
+ let angka = document.getElementById('count')
+ console.log(angka.index)
 
+ console.log(event.target)
+
+}
 
 
 
