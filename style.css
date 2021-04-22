@@ -39,6 +39,9 @@ nav{
 .banner{
     box-shadow: tomato;
     size: 200px;
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
 }
 .toolbar button:hover{
     color: red;
@@ -72,9 +75,11 @@ nav{
 .discount{
     height: 200px;
     margin-left: 15px;
+    display: flex;
+    flex-direction: column;
 }
 .produk{
-    height:150px;
+    height:200px;
     display: flex;
     flex-direction: column;
     /* border-radius:10px ; */
@@ -85,7 +90,6 @@ nav{
 .submit{
     margin-left: 15px;
 }
-
 .column {
     float: left;
     width: 20%;
@@ -98,5 +102,4 @@ nav{
 }
 .produkName{
     font-size:18px ;
-    font-style: oblique;
 }
