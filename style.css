@@ -1,2 +1,105 @@
-
 /* <!-- write your code here --> */
+body{
+    margin:s'0';
+}
+*{
+    background-color: lightpink;
+}
+.logo{
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-right: auto;
+    background-color: palevioletred;
+    display:inline-block;
+}
+img{
+    height:75px;
+    display: flex;
+    flex-direction: column;
+    /* border-radius:10px ; */
+}
+nav{
+    text-align: left;
+    position: relative;
+    top: 75px;
+    word-spacing:0.2cm;
+    background-color: palevioletred;
+    display:inline-block;
+}
+.navigasi{
+    background-color: palevioletred;
+    display:inline-block;
+    width: 100%;
+}
+.banner{
+    box-shadow: tomato;
+    size: 200px;
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.toolbar button:hover{
+    color: red;
+    text-decoration: underline;
+}
+.toolbar{
+    background-color: palevioletred;
+    text-align: left;
+    position: relative;
+    word-spacing:0.2cm;
+    background-color: palevioletred;
+    display:inline-block;
+}
+.keranjang{
+    float: left;
+    width: 20%;
+    margin-bottom: 100%;
+    border-color: black 1px;
+    border:4px;
+    margin-right: 15px;
+}
+#car{
+    align-items: center;
+    justify-items: center;
+    size: initial;
+}
+.menu{
+    float: left;
+    width: 70%;
+}
+.discount{
+    height: 200px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.produk{
+    height:200px;
+    display: flex;
+    flex-direction: column;
+    /* border-radius:10px ; */
+}
+.produkFont{
+    font-size: 15px;
+}
+.submit{
+    margin-left: 15px;
+}
+.column {
+    float: left;
+    width: 20%;
+    padding: 5px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.produkName{
+    font-size:18px ;
+}
