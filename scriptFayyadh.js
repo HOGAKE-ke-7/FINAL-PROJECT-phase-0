@@ -1,5 +1,29 @@
 const dataKuwe = [
   {
+    name: "Bukan Churros Biasa",
+    price: 50000,
+    rating: 8,
+    img: "BT-01.png"
+  },
+  {
+    name: "Puding Cenat Cenut",
+    price: 40000,
+    rating: 9,
+    img: "BT-04.png"
+  },
+  {
+    name: "Cupid Cap",
+    price: 35000,
+    rating: 7,
+    img: "LT-01.png"
+  },
+  {
+    name: "Matcha Taste",
+    price: 90000,
+    rating: 10,
+    img: "NV-01.png"
+  },
+  {
     name: "",
     price: 0,
     rating: 0,
@@ -13,7 +37,7 @@ const cart = document.getElementbyId("cart") //  ini id buat cart, tambahin ke d
 function generateCatalogue(data) { // generate cataloguenya
   catalogue.innerHTML = ""
   let catalogueCap = 0
-  while (catalogueCap < 5)
+  while (catalogueCap <= 4)
   const randomIndex = data[Math.floor(Math.random * data.length)]
     let catalogueCard = document.createElement("div")
     catalogueCard.classList.add("catalogueItem") // ini class item cataloguenya
