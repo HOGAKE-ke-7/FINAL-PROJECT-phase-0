@@ -113,7 +113,7 @@ function generateCard(data) {
 function deleteData(event) {
   // console.log('masuk')
   // console.log(event.target.getAttribute('id_pokemon'))
-  const index =  +event.target.getAttribute('id_pokemon')
+  const index =  event.target.getAttribute('id_pokemon')
   // console.log(index)
   pokemons.splice(index,1)
   console.log(pokemons)
