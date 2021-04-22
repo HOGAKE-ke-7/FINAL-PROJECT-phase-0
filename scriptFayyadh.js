@@ -7,16 +7,16 @@ const dataKuwe = [
   }
 ]
 
-
 const catalogue = document.getElementbyId("catalogue") // ini id catalogue, tambahin ke div yang buat catalogue
 const cart = document.getElementbyId("cart") //  ini id buat cart, tambahin ke div yang buat cart
 
 function generateCatalogue(data) { // generate cataloguenya
+  catalogue.innerHTML = ""
   let catalogueCap = 0
   while (catalogueCap < 5)
   const randomIndex = data[Math.floor(Math.random * data.length)]
     let catalogueCard = document.createElement("div")
-    catalogueCard.classList.add("card")
+    catalogueCard.classList.add("catalogueItem") // ini class item cataloguenya
     console.log(catalogueCard)
 
     let catalogueName = document.createElement("h1")
@@ -42,6 +42,7 @@ function generateCatalogue(data) { // generate cataloguenya
     let button = document.createElement("button")
     button.innerHTML = "Add to Cart"
     button.addEventListener("click", addToCart)
+    button.setAttribute("idnya", catalogueCap)
     catalogueCard.appendChild(button)
     console.log(button)
 
@@ -52,10 +53,14 @@ function generateCatalogue(data) { // generate cataloguenya
 function addToCart() { // buat ngeklik dan nambahin ke array cartnya
   //cari idnya
   const index = event.target.getAttribute("nanti dimasukkin idnya")
+
 }
 
-function generateCart() { // buat nambahin ke cartnya
-
+function generateCart(obj) { // buat nambahin ke cartnya, dimasukkin class buat cartnya
+// classnya cartItem
+let cart = document.createElement("div")
+    catalogueCard.classList.add("cartItem") 
+    console.log(catalogueCard)
 }
 
 function deleteFromCart () { // buat ngapus dari cartnya
