@@ -4,7 +4,7 @@
 const produkAtas = document.getElementById('produkAtas')
 // console.log(produkAtas)
 
-const keranjang = document.getElementById('Keranjang')
+const keranjang = document.getElementById('keranjang')
 // console.log(keranjang)
 
 // const cart = document.getElementById('cart')
@@ -13,15 +13,22 @@ const keranjang = document.getElementById('Keranjang')
 // cart.appendChild(keranjang)
 
 ////////////////////////////////////////////////////////
+let idAwal = 1
 function cart1() {
+  let divKeranjang = document.createElement('div')
+  divKeranjang.id = `${idAwal}-cart`
+  
   let pic = document.createElement('img')
   pic.src = '/menu/BT-01.png'
   pic.classList.add('sicart')
   pic.innerHTML = 'Churos'
   // console.log(pic)
 
+  let judul = document.createElement('p')
+  judul.innerHTML = 'Churos'
+
   let div = document.createElement('div')
-  div.id = 'btn'
+  // div.id = 'btn'
   // console.log(div)
 
   let button = document.createElement('button')
@@ -38,12 +45,12 @@ function cart1() {
   // angka.innerHTML = tos
   // console.log(angka)
 
-  var tag = document.createElement("a"); 
-  tag.id = 'btn'
-  var element = document.getElementsByTagName("p")[0];
-  element.style = 'display: inline-block'
-  element.appendChild(tag); 
-  div.appendChild(element)
+          // var tag = document.createElement("a"); 
+          // tag.id = 'btn'
+          // var element = document.getElementsByTagName("p")[0];
+          // element.style = 'display: inline-block'
+          // element.appendChild(tag); 
+          // div.appendChild(element)
   // console.log(element)
 
   let button2 = document.createElement('button')
@@ -56,22 +63,32 @@ function cart1() {
   button3.type = 'button'
   button3.innerHTML = 'delete'
   button3.addEventListener('click',deleteCart)
-  button3.setAttribute('kernom',1)
+  // button3.setAttribute('id',`${idAwal}-cart`)
   div.appendChild(button3)
+  idAwal += 1
   // console.log(button3)
  
-  keranjang.appendChild(pic)
-  keranjang.appendChild(div)
+  divKeranjang.appendChild(pic)
+  divKeranjang.appendChild(judul)
+  divKeranjang.appendChild(div)
+  keranjang.appendChild(divKeranjang)
 }
 console.log('dsfdsfdsafasdfds',keranjang)
 
 function deleteCart(event) {
   console.log('masukdfasdf')
   console.log(event.target)
-  const index = +event.target.getAttribute('kernom')
+  const index = event.target.parentElement
+  const indexParent = index.parentElement
+
+  // console.log(index)
+  console.log(indexParent.id)
   // keranjang.splice(index,1)
-  // console.log(keranjang)
+  console.log(keranjang,'fsdfsdafd')
+  console.log(indexParent.remove())
+  
 }
+
 
 
 
