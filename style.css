@@ -4,7 +4,6 @@
 }
 .logo{
     width: 100px;
-    height: 100px;
     margin: 0;
     position: relative;
     top: 0;
@@ -39,7 +38,7 @@ nav{
     flex-direction: row;
 }
 .toolbar button:hover{
-    color: red;
+    color: purple;
     text-decoration: underline;
 }
 .toolbar{
@@ -49,6 +48,7 @@ nav{
     word-spacing:0.2cm;
     background-color: palevioletred;
     display:inline-block;
+    font-size: 25px;
 }
 #cart{
     float: left;
@@ -75,8 +75,8 @@ nav{
     width: 70%;
 }
 .discount{
-    height: 200px;
-    margin-left: 15px;
+    height: 280px;
+    margin-left: 33px;
     display: flex;
     flex-direction: column;
 }
@@ -84,7 +84,7 @@ nav{
     height:150px;
     display: flex;
     flex-direction: column;
-    /* margin-left: 15px; */
+    margin-left: 15px;
     /* border-radius:10px ; */
 }
 .produkFont{
@@ -103,6 +103,7 @@ nav{
     content: "";
     clear: both;
     display: table;
+    padding-bottom: 40px;
 }
 .produkName{
     font-size:18px ;
