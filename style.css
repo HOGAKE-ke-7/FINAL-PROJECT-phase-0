@@ -69,6 +69,7 @@ nav{
     display: inline-block;
     vertical-align: top;
 }
+
 .menu{
     float: left;
     width: 70%;
@@ -80,7 +81,7 @@ nav{
     flex-direction: column;
 }
 .produk{
-    height:200px;
+    height:150px;
     display: flex;
     flex-direction: column;
     margin-left: 15px;
