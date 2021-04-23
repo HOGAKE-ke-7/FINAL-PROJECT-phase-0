@@ -1,12 +1,8 @@
-/* <!-- write your code here --> */
-body{
-    margin:s'0';
-}
 *{
     background-color: lightpink;
+    margin:0;
 }
 .logo{
-    float: left;
     width: 100px;
     height: 100px;
     margin: 0;
@@ -26,7 +22,6 @@ img{
 nav{
     text-align: left;
     position: relative;
-    top: 75px;
     word-spacing:0.2cm;
     background-color: palevioletred;
     display:inline-block;
@@ -55,19 +50,26 @@ nav{
     background-color: palevioletred;
     display:inline-block;
 }
-.keranjang{
+#cart{
     float: left;
     width: 20%;
     margin-bottom: 100%;
     border-color: black 1px;
-    border:4px;
+    border:4px solid;
+    padding-bottom: 100%;
     margin-right: 15px;
 }
-#car{
+.sicart{
     align-items: center;
     justify-items: center;
     size: initial;
+    height:75px;
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+    vertical-align: top;
 }
+
 .menu{
     float: left;
     width: 70%;
@@ -79,13 +81,15 @@ nav{
     flex-direction: column;
 }
 .produk{
-    height:200px;
+    height:150px;
     display: flex;
     flex-direction: column;
+    /* margin-left: 15px; */
     /* border-radius:10px ; */
 }
 .produkFont{
     font-size: 15px;
+    margin-left: 15px;
 }
 .submit{
     margin-left: 15px;
