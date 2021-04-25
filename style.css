@@ -1,0 +1,176 @@
+*{
+    background-color: lightpink;
+    margin:0;
+}
+.logo{
+    height: 45px;
+    margin: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-right: auto;
+    background-color: palevioletred;
+    display:inline-block;
+}
+
+
+body{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+img{
+    height:75px;
+    display: flex;
+    flex-direction: column;
+    /* border-radius:10px ; */
+}
+nav{
+    text-align: left;
+    position: absolute;
+    top: 75px;
+    word-spacing:0.2cm;
+    background-color: palevioletred;
+    display:inline-block;
+}
+.navigation-bar {
+    max-height: 45px;
+}
+.banner{
+    box-shadow: tomato;
+    size: 200px;
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.toolbar button:hover{
+    color: red;
+    text-decoration: underline;
+}
+.toolbar{
+    background-color: palevioletred;
+    text-align: left;
+    position: relative;
+    word-spacing:0.2cm;
+    background-color: palevioletred;
+    display:inline-block;
+}
+#cart{
+    padding-top: 10px;
+    float: left;
+    width: 20%;
+    margin-bottom: 100%;
+    border: 4px dashed;
+    border-color: indianred;
+    padding-bottom: 15px;
+    margin-right: 15px;
+}
+.sicart{
+    width: 45px;
+    align-items: center;
+    justify-items: center;
+    size: initial;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.menu{
+    float: left;
+    width: 70%;
+}
+.discount{
+    height: 200px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.produk{
+    height:150px;
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 15px; */
+    /* border-radius:10px ; */
+}
+.produkFont{
+    font-size: 15px;
+    margin-left: 15px;
+}
+.submit{
+    margin-left: 15px;
+}
+.column {
+    float: left;
+    width: 20%;
+    padding: 5px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.produkName{
+    text-align: right;
+    font-size:18px ;
+    margin-bottom: 100px;
+}
+
+.button {
+    position: relative;
+    background-color: indianred;
+    color: wheat;
+    font-size: 15px;
+    padding: 11px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+  .button:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: palevioletred;
+  }
+  
+  li {
+    float: left;
+
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color:palevioletred;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: rgb(85, 49, 61);
+  }
+  
+  .active {
+    background-color: rgb(85, 49, 61);
+  }
