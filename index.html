@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  <title>KuwehKuweh</title>
+</head>
+
+<body>
+  <ul>
+    <li><img src="./menu/Baked Sweets Food Playful Logo.png" class='logo'></li>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Category</a></li>
+    <li><a href="#">Sign Up</a></li>
+    <li><a href="#">Log In</a></li>
+    <li style="float:right"><a class="active" href="#">Menu</a></li>    
+  </ul>
+<br>
+<br>
+  <div>
+    <div id='cart'>
+      <p style="text-align: center;"><strong>Your Checkout Item</strong></p>
+      <br>
+      <div id='keranjang'>
+        <!-- <div>
+          <img src='/menu/BT-01.png' class='sicart'> Rainbow cake</img>
+          <div id="btn">
+            <button type="button">+</button>
+            <p style='display: inline-block;'><a id="btn">0</a></p>
+            <button type="button">-</button>
+            <button type="button">delete</button>
+          </div>
+          <br>
+        </div>
+        <p><img src='/menu/NV-01.jpg' class='sicart'> Rainbow cake</p>
+        <div id="btn">
+          <button type="button">+</button>
+          <p style='display: inline-block;'><a id="btn">0</a></p>
+          <button type="button">-</button>
+          <button type="button">delete</button>
+        </div>
+        <br>
+        <p><img src='/menu/BT-04.png' class='sicart'> Rainbow cake</p>
+        <div id="btn">
+          <button type="button">+</button>
+          <p style='display: inline-block;'><a id="btn">0</a></p>
+          <button type="button">-</button>
+          <button type="button">delete</button>
+        </div>
+        <br>
+        <p><img src='/menu/BT-04.png' class='sicart'> Rainbow cake</p>
+        <div id="btn">
+          <button type="button">+</button>
+          <p style='display: inline-block;'><a id="btn">0</a></p>
+          <button type="button">-</button>
+          <button type="button">delete</button>
+        </div>
+        <br> -->
+      </div>
+    </div>
+    <div class='menu'>
+      <img src='./menu/banner.jpg' alt='promo discount kuweh' class="discount" width="700px">
+      <br>
+      <br>
+      <h2 style="font-style: italic;text-align: justify">Hot Sales</h2><br>
+      <div class="row" id="produkAtas">
+        <div class="column">
+          <p class="produkFont"><img src='./menu/BT-01.png' class='produk'><strong><br><span
+                class='produkName' id='churros'>Churros </span></strong><br>Rp.25.000</p>
+                  <br>
+          <button onclick="cart1()" style="margin-left: 15px;" class="button">Cart</button>
+        </div>
+        <div class="column">
+          <p class="produkFont"><img src='./menu/BT-02-min.png' class='produk'><strong><br><span class='produkName' id='tiramisu'>Tiramisu </span></strong><br>Rp.25.000</p>
+                  <br>
+            <button onclick="cart2()" style="margin-left: 15px;" class="button">Cart</button>
+        </div>
+        <div class="column">
+          <p class="produkFont"><img src='./menu/BT-03-min.png' class='produk'><strong><br><span class='produkName' id='blueberry'>Blueberry </span></strong><br>Rp.25.000</p>
+                  <br>
+            <button onclick="cart3()" style="margin-left: 15px;" class="button">Cart</button>
+        </div>
+        <div class="column">
+          <p class="produkFont"><img src='./menu/BT-04.png' class='produk'><strong><br><span class='produkName' id='puding'>Puding
+                Cenut </span></strong><br>Rp.25.000</p>
+                  <br>
+            <button onclick="cart4()" style="margin-left: 15px;" class="button">Cart</button>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div>
+        <h2 style="font-style: italic;text-align: justify;">Our Menu</h2><br>
+        <div class="row" id="produkBawah">
+          <div class="column">
+            <p class="produkFont"><img src='./menu/LT-01.png' class='produk'><strong><br><span class='produkName' id='cupidCap'>Cupid
+                  Cap </span></strong><br>Rp.25.000</p>
+                  <br>
+              <button onclick="cart5()" style="margin-left: 15px;" class="button">Cart</button>
+          </div>
+          <div class="column">
+            <p class="produkFont"><img src='./menu/LT-02-min.png' class='produk'><strong><br><span class='produkName'>Kuma Kumi
+                  </span></strong><br>Rp.25.000</p>
+                  <br>
+              <button onclick="cart6()" style="margin-left: 15px;" class="button">Cart</button>
+          </div>
+          <div class="column">
+            <p class="produkFont"><img src='./menu/LT-03-min.png' class='produk'><strong><br><span class='produkName'>Minami
+                  </span></strong><br>Rp.25.000</p>
+                  <br>
+              <button onclick="cart7()" style="margin-left: 15px;" class="button">Cart</button>
+          </div>
+          <div class="column">
+            <p class="produkFont"><img src='./menu/LT-04-min.png' class='produk'><strong><br><span class='produkName'>Super Seger
+                  </span></strong><br>Rp.25.000</p>
+                  <br>
+              <button onclick="cart8()" style="margin-left: 15px;" class="button">Cart</button>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="row" id="produkBawah">
+          <div class="column">
+            <p class="produkFont"><img src='./menu/NV-01.jpg' class='produk'><strong><br><span class='produkName'>Matcha Taste
+              </span></strong><br>Rp.25.000</p>
+                  <br>
+          <button onclick="cartMatcha()" style="margin-left: 15px;" class="button">Cart</button>
+          </div>
+          <div class="column">
+            <p class="produkFont"><img src='./menu/NV-02-min.png' class='produk'><strong><br><span class='produkName'>Banana Krucut
+                  </span></strong><br>Rp.25.000</p>
+                  <br>
+              <button onclick="cart10()" style="margin-left: 15px;" class="button">Cart</button>
+          </div>
+          <div class="column">
+            <p class="produkFont"><img src='./menu/NV-03-min.png' class='produk'><strong><br><span class='produkName'>Lucifer
+                  </span></strong><br>Rp.25.000</p>
+                  <br>
+              <button onclick="cart11()" style="margin-left: 15px;" class="button">Cart</button>
+          </div>
+          <div class="column">
+            <p class="produkFont"><img src='./menu/NV-04-min.png' class='produk'><strong><br><span class='produkName'>Granola Ichigo
+                  </span></strong><br>Rp.25.000</p>
+                  <br>
+              <button onclick="cart12()" style="margin-left: 15px;" class="button">Cart</button>
+          </div>
+        </div>
+      </div>
+      <script src="script.js"></script>
+</body>
+<footer>
+
+</footer>
+
+</html>
